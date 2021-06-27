@@ -1,0 +1,62 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ApiCatalogoCartas</name>
+    </assembly>
+    <members>
+        <member name="M:ApiCatalogoCartas.Controllers.V1.CardsController.Obter(System.Int32,System.Int32)">
+            <summary>
+            Buscar todos os cards de forma paginada
+            </summary>
+            <remarks>
+            Não é possível retornar os cards sem paginação
+            </remarks>
+            <param name="pagina">Indica qual página está sendo consultada. Mínimo 1</param>
+            <param name="quantidade">Indica a quantidade de registros por página. Mínimo 1 e máximo 50</param>
+            <response code="200">Retorna a lista de cards</response>
+            <response code="204">Caso não haja cards</response>   
+        </member>
+        <member name="M:ApiCatalogoCartas.Controllers.V1.CardsController.Obter(System.Guid)">
+            <summary>
+            Buscar um card pelo seu Id
+            </summary>
+            <param name="idcard">Id do card buscado</param>
+            <response code="200">Retorna o card filtrado</response>
+            <response code="204">Caso não haja card com este id</response>   
+        </member>
+        <member name="M:ApiCatalogoCartas.Controllers.V1.CardsController.Criar(ApiCatalogoCartas.InputModel.CardInputModel)">
+            <summary>
+            Inserir um card no catálogo
+            </summary>
+            <param name="cardInputModel">Dados do card a ser inserido</param>
+            <response code="200">Caso o card seja inserido com sucesso</response>
+            <response code="422">Caso já exista um card com o mesmo nome</response>   
+        </member>
+        <member name="M:ApiCatalogoCartas.Controllers.V1.CardsController.Atualizar(System.Guid,ApiCatalogoCartas.InputModel.CardInputModel)">
+            <summary>
+            Atualizar um card no catálogo
+            </summary>
+            /// <param name="idcard">Id do card a ser atualizado</param>
+            <param name="cardInputModel">Novos dados para atualizar o card indicado</param>
+            <response code="200">Caso o card seja atualizado com sucesso</response>
+            <response code="404">Caso não exista um card com este Id</response>   
+        </member>
+        <member name="M:ApiCatalogoCartas.Controllers.V1.CardsController.Atualizar(System.Guid,System.String)">
+            <summary>
+            Atualizar o preço de um card
+            </summary>
+            /// <param name="idcard">Id do card a ser atualizado</param>
+            <param name="descricao">Nova descricao do card</param>
+            <response code="200">Caso a descricao seja atualizado com sucesso</response>
+            <response code="404">Caso não exista um card com este Id</response>   
+        </member>
+        <member name="M:ApiCatalogoCartas.Controllers.V1.CardsController.Apagar(System.Guid)">
+            <summary>
+            Excluir um card
+            </summary>
+            /// <param name="idcard">Id do card a ser excluído</param>
+            <response code="200">Caso o card seja apagado com sucesso</response>
+            <response code="404">Caso não exista um card com este Id</response>   
+        </member>
+    </members>
+</doc>
