@@ -1,6 +1,6 @@
 **Yu-Gi-Oh! Pokedex**
 
-Bem vindo ao Yu-Gi-Oh Pokedex, com este sistema você será capás de catalogar os mostro do Yu-Gi-Oh! para ajudar você em seus duelos e quando 
+Bem vindo ao Yu-Gi-Oh Pokedex, com este sistema você será capás de catalogar os mostro do Yu-Gi-Oh para ajudar você em seus duelos, e quando 
 você precisar de informações sobre os montros do jogo poderá consultar tudo através dele.
 
 **Tecnologias Utilizadas**
@@ -14,8 +14,8 @@ você precisar de informações sobre os montros do jogo poderá consultar tudo 
 dessas mensagens o sistema realiza as operações correspondentes.
 
 * O programa permite cadastrar, consultar, atualizar, deletar monstros de um armazenamento em memória. Caso o sitema pare de rodar todos os dados 
-nele inseridos serão perdidos com ecessão de alguns monstros que ele tem cadastrados por padrão.
+nele inseridos serão perdidos com exceção de alguns monstros que ele tem cadastrados por padrão.
 
-* Todos os mostros monstros devem possuir id, nome, atributo, tipo, descrição, nivel, ataque e defesa para que possam ser cadastrados.
+* Para cadastrar um monstro ele deve possuir nome, atributo, tipo do monstro, tipo da carta, descrição, nivel, ataque e defesa.
 
-* O Sistema valida os dados cadastrados respeitando as regras do jogo.
+* O Sistema valida os dados cadastrados verificando se todos os dados forão cadastrados corretamente, se não ele exibe uma mensagem informando qual foi o erro.
