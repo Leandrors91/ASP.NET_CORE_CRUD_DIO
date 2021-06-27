@@ -1,20 +1,19 @@
-**Yu-Gi-Oh! Pokedex**
+### Yu-Gi-Oh! Pokedex
 
 Bem vindo ao Yu-Gi-Oh Pokedex, com este sistema você será capás de catalogar os mostro do Yu-Gi-Oh para ajudar você em seus duelos, e quando 
 você precisar de informações sobre os montros do jogo poderá consultar tudo através dele.
 
-**Considerações**
+### Considerações
 
 Este projeto é uma nova implementação que eu criei do sistema original que foi desenvolvido durante aula ministrada por Thiago Campos de Oliveira em parceria da Digital Innovation One.<br>
-
 Neste projeto eu tive a idéia de tranformar o sistema inicial em um CRUD de mostros do Yu-Gi-Oh e fiz todas as modificações necessárias.
 
-**Tecnologias Utilizadas**
+### Tecnologias Utilizadas
 
 * ASP.NET CORE
 * C#
 
-**Como Funciona?**
+### Como Funciona?
 
 * O sistema se trata de um serviço web que recebe as requisições dos usauários via mensagens HTTP e devolve o código de status delas. Através 
 dessas mensagens o sistema realiza as operações correspondentes.
